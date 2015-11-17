@@ -228,4 +228,5 @@ gruntfile.js
 **/nbproject
 **/node_modules
 **/gruntfile.js
+**/package.json
 >>>>>>> origin/master
