@@ -1,0 +1,24 @@
+.checkout-buttons  {
+  .btn {
+    .make-sm-column(5);
+    padding: @grid-gutter-width/2;
+    color: @link-nav-active;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .checkout-continue {
+    .make-sm-column-push(7);
+  }
+  .checkout-cancel,
+  .checkout-back {
+    .make-sm-column-pull(7);
+    //.make-sm-column-offset(6);
+  }
+  .button-operator {
+    .make-sm-column(2);
+    padding: @grid-gutter-width/2;
+    text-align: center;
+  }
+}

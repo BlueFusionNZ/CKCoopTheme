@@ -1,0 +1,269 @@
+//ISSUES WITH FORM STYLES? COMMENTED OUT  LINE 135 bootstrap/forms/less
+
+// Bootstrap library.
+@import 'bootstrap.less';
+
+// Base-theme overrides.
+@import 'overrides.less';
+@import 'variables.less';
+// Theme specific.
+@import 'header.less';
+@import 'content.less';
+@import 'footer.less';
+
+@import 'home.less';
+@import 'checkout.less';
+@import 'user.less';
+@import 'order-invoice.less';
+@import 'board.less';
+
+/**************************************************
+* --
+* 1. Global
+* --
+**************************************************/
+@font-face {
+  font-family:"yelly";
+  src:url("../fonts/yelly/Yelly.eot?") format("eot"),
+    url("../fonts/yelly/Yelly.woff") format("woff"),
+    url("../fonts/yelly/Yelly.ttf") format("truetype"),
+    url("../fonts/yelly/Yelly.svg#yelly-Regular") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family: "captureit";
+  src: url('../fonts/capture_it/Capture-it.eot');
+  src: url('../fonts/capture_it/Capture-it.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/capture_it/Capture-it.svg#Capture it') format('svg'),
+  url('../fonts/capture_it/Capture-it.woff') format('woff'),
+  url('../fonts/capture_it/Capture-it.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+body {
+  /*font-family: "Open Sans", sans-serif;*/
+  /*font-size: @font-size-base;*/
+  /*font-weight: 400;*/
+  color: @text-color;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+  background-color: #fdf1e0;
+  @media @tablet {
+    background-image: url('../images/co-op-background.png');
+    background-repeat: repeat;
+  }
+}
+
+.region {
+  /*margin: 0 10px; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /*font-family: "Open Sans", sans-serif;*/
+  //font-family: Verdana, Geneva, Sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+a {
+  color: @link-color;
+  text-decoration: none;
+  &:link,
+  &:visited {
+    color: @link-color;
+  }
+  &:hover {
+    text-decoration: underline }
+}
+
+
+h1#page-title,
+.page-node h1 {
+  font-size: @font-size-h1;
+  margin-left: 10px;
+  margin-bottom: 0;
+  /* LTR */
+  /*text-transform: uppercase; */}
+
+.node-page {
+  margin: 0 10px; }
+
+textarea,
+select,
+.form-control,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+
+  /*border: 1px solid #e0e0e0;*/
+
+/*  Text input color:  (standard text color)
+  Button: #f0dfcb rounded on outside,
+  Search text @text-color (standard text color)*/
+
+/*border: #f0dfcb 1px solid;*/
+  border-radius: .5em;
+
+  /*background: #fef7ed; /*#fbfafa;*/
+
+  /*border: 1px solid #e0e0e0;*/
+  color: @text-color;
+  /*color: #4c4c4c;*/
+  margin: 1px;
+  width: 100%;
+  max-width: 100%;
+  padding: 0px 5px; }
+
+select {
+  height: inherit;
+  padding: 0; }
+
+button,
+.btn,
+input[type='submit']{
+  display: block;
+  width: 100%;
+  @media @tablet {
+    display: inline-block;
+  }
+  /*height: 2em;*/
+  padding: 0.5em  1em;
+  background: none;
+  background-color: @nav-background-color !important;
+  color: @link-top-nav-active;
+  border-radius: 4px;
+  border-color: transparent;
+  &:hover {
+    color: white;
+  }
+
+  &#edit-checkout {
+    margin-left: 100px;
+    float: right;
+  }
+}
+
+form-radios {
+  padding-bottom: @grid-gutter-width / 2;
+}
+
+.form-type-radio,
+.form-type-checkbox {
+
+  label {
+    padding-left: @grid-gutter-width / 2;
+  }
+}
+
+label {
+  padding-top: @grid-gutter-width / 2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+figure {
+  margin: 0;
+  padding: 0; }
+
+
+object,
+embed,
+video {
+  max-width: 100%; }
+
+/* Kill flexible images in IE6-8 */
+.ie6-8 img {
+  max-width: none; }
+
+/* Override max-width 100% for map displays */
+.gmap img,
+.view-gmap img,
+.openlayers-map img,
+#getlocations_map_canvas img,
+#locationmap_map img {
+  max-width: none !important; }
+
+/* Improve IE's resizing of images */
+svg:not(:root) {
+  overflow: hidden; }
+
+table thead th {
+  font-weight: bold; }
+table th,
+table td {
+  padding: 5px 10px; }
+
+ul {
+  margin-left: 10px; }
+  ul li {
+    margin-left: 10px; }
+
+/**
+ * Reset Omega text shadow
+ */
+button, input[type="reset"], input[type="submit"], input[type="button"] {
+  text-shadow: 0 0 0 transparent; }
+
+/**
+ * Remove Cloud-zoom lens default border/margin.
+ */
+.cloud-zoom-lens {
+  border: 0;
+  margin: 0; }
+
+.cloud-zoom-container #wrap {
+  width: 100%;
+  margin-bottom: 1em;
+  z-index: 12 !important; }
+
+
+.floatright{
+  float:right;
+  @media (max-width: @container-sm) {
+    .floatright{
+      float:none;
+    }
+  }
+}
+
+/*.floatleft{
+  float:left;
+  @media (max-width: @container-sm) {
+  .floatleft{float:none;}
+  }
+  }*/
+
+/*.floatright {
+  float: none;
+  @media @tablet {
+    .floatright {
+      float:right;
+    }
+  }
+}*/

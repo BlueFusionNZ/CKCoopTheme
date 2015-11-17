@@ -1,0 +1,32 @@
+.page-user {
+  .profile {
+    a {
+      display: block;
+    }
+  }
+}
+
+.page-user-addressbook {
+  .region-content {
+    .block-inner {
+      > div {
+        padding-bottom: @grid-gutter-width;
+        border: @horizontal-line;
+      }
+    }
+  }
+  #commerce-addressbook-shipping-default {
+    padding: @grid-gutter-width;
+  }
+  .view-content {
+    h3 {
+      font-size: @font-size-base;
+      display: inline;
+    }
+    a { display:inline; }
+    a:first-of-type:before { content:"\A"; white-space:pre; }
+/*    a:first {
+      display: block;
+    }*/
+  }
+}

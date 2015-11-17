@@ -1,0 +1,104 @@
+.front {
+  .main-container {
+    padding: 0;
+    /*.make-jumbotron();*/
+/*    width: 100%;*/
+    /*background-color: #0f0;*/
+    background-color: transparent;
+    .front-headline {
+      text-transform: uppercase;
+      color: #fff; // text color
+      text-shadow: 0 5px 5px rgba(0,0,0,.75); // drop shadow
+      margin-top: @grid-gutter-width;
+      text-align: center;
+      @media @tablet {
+        .make-sm-column(12);
+        position: relative;
+       top: @front-search-offset *.9;
+        margin-top: 0;
+      }
+      @media @wide {
+        top: @front-search-offset * 1.3;
+      }
+      h1 {
+        display: inline;
+        font-family: "Raleway";
+        letter-spacing: .1em;
+        @media @tablet {
+          font-size: 40px;
+        }
+        @media @wide{
+          font-size: 60px;
+        }
+      }
+    }
+    .front-image {
+      /*background-image: url("/sites/harbourcoop.co.nz/themes/hc_bootstrap/images/food-you-can-believe-in-small.jpg");*/
+      width: 100%;
+    }
+    .front-search {
+      margin-top: @grid-gutter-width;
+      text-align: center;
+      @media @tablet {
+        .make-sm-column(6);
+        .make-sm-column-push(6);
+        position: relative;
+        top: @front-search-offset *.9;
+        margin-top: 0;
+        text-align: left;
+      }
+      font-size: @font-size-base;
+/*      #front-edit-submit-display-products {
+        top: 9px;
+      }*/
+      p {
+        font-family: "yelly";
+        font-size: @font-size-h4;
+      }
+      .views-exposed-widget {
+        padding: 0;
+      }
+      .views-widget {
+        width: 100%;
+      }
+      .input-group {
+        width: 100%;
+      }
+      .views-widget-filter-search_api_views_fulltext {
+        width: 100%;
+      }
+      .form-control {
+        .border-radius(.5em);
+        font-size: @font-size-h3;
+      }
+      input {
+        padding-right: 50px;
+      }
+      button.form-submit {
+        margin: 0;
+        top: 1px;
+/*        position: absolute;
+        bottom: 0;*/
+/*        top: 11px;
+        left: -43px;
+        right: 21px;*/
+      }
+    }
+    @media @tablet {
+      .main-content {
+        .make-sm-column(12);
+        position: relative;
+        top: @front-search-offset / 3;
+      }
+    }
+  }
+  .front-thumb {
+
+    .make-sm-column(3);
+    .make-xs-column(6);
+    padding-top: @grid-gutter-width;
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,350 @@
+@main-nav-height: 90px;
+
+header#navbar {
+  background-color: transparent;//#0f0;//@navbar-default-bg;
+  border: none;
+}
+
+
+.navbar-toggle-holder {
+  .Justify-Navbar-Container;
+  @media @tablet {
+    display: none;
+  }
+}
+.navbar-toggle {
+  /*float: none;*/
+  .Justify-Navbar-Item;
+  .size(56px, 42px);
+  .border-radius(5px); // border radius
+  background-color: #efdfcb !important; // layer fill content
+  .box-shadow(~"0 1px 0 rgba(175,176,176,.75)"); // drop shadow
+  color: #ed6501;
+  padding: 0;
+  span.fa {
+    /*display: block;*/
+    font-size: @font-size-h2;//2em;
+  }
+}
+
+#top-menu,
+.region-page-top,
+#navbar {
+  font-size: @font-size-h4;
+  .navbar-collapse {
+    /*padding: 0;*/
+    max-height: none;
+  }
+  ul,
+  nav {
+    margin: 0;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    a {
+      padding-top: 0;
+    }
+  }
+}
+
+
+ #views-exposed-form-display-products-page {
+   position: relative;
+   overflow: hidden;
+/*    .views-submit-button {
+      position: absolute;
+      right: 5px;
+      top: 6px;
+      z-index: 100;
+      .form-submit {
+        background-color: transparent !important;
+        background-image: url("../images/picto_magnifying_glass.png");
+        background-position: 98% 50%;
+        background-repeat: no-repeat;
+        border: 0px none;
+        border-radius: 0px;
+        margin: -2px -15px 0 0;
+        position: relative;
+        text-indent: -9999px;
+      }
+
+    }*/
+    #edit-search-api-views-fulltext-wrapper {
+      @media @tablet {
+        /*float: right;*/
+      }
+      float: none;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .input-group {
+      margin: 0 auto;}
+    .input-group-addon {
+      /*display: none;*/
+    }
+  }
+
+
+
+
+
+@media @tablet {
+  header#navbar {
+    padding-left: 0;
+    padding-right: 0;
+    .navbar-header {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .site-name-slogan {
+    display: block;
+    background-image: url("../images/organic-whole-foods-logo.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    max-width: 303px;
+    min-height: 78px;
+
+  }
+  .user-menu {
+    padding: 0;
+    /*.make-sm-column(4);*/
+  }
+
+/*d  Regardless of active-trail never show
+    ul ul ul
+Always show ul li.active-trail ul in the*/
+
+
+  #block-menu-menu-user-menu {
+    ul.menu {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      li {
+        margin:0;
+        padding: 0 .5em;
+        border-right: 1px solid rgb(220, 203, 184);
+        vertical-align: middle;
+/*       .make-sm-column(4);*/
+        &.last {
+          border-right: none;
+        }
+      }
+     a {
+        padding: 0;
+        background-color: none;
+      }
+      font-size: ( @font-size-base * .9 );
+    }
+  }
+
+  .top-menu-collapse {
+    padding: 0;
+  }
+  .region-top-menu {
+    font-size: @font-size-base;
+    margin: 0 !important;
+    padding-bottom: 35px;
+    background-image:url('../images/header-base-bar.png');
+    background-position: 100% 100%;
+    background-repeat: repeat-x;
+    position:relative;
+    top:0;
+    height: 125px;
+    /*outline: 1px solid #00f;*/
+    #block-system-main-menu {
+      position:relative;
+      height: @main-nav-height;
+      top:0;
+      max-width: 1140px;
+      margin: 0 auto;
+      ul:not(.contextual-links) {
+        position: static;
+        .Justify-Navbar-Container;
+        vertical-align: bottom;
+        margin: 0;
+        ul,
+        ul ul {
+          /* hide all deeper menu items, bring them back lateras required */
+          display: none;
+        }
+        li {
+          .Justify-Navbar-Item;
+          position: static;
+          /*display: block;*/
+          margin: 0;
+          font-size: 100%;
+          /*width: 19%; // Chrome*/
+          width: 19%;
+          vertical-align: bottom;
+          padding: 0;
+          a {
+            display: inline-block;
+            color: @link-nav-inactive;
+            height: @main-nav-height;
+            padding: 40px 120px 0 10px;
+            background-repeat: no-repeat;
+            /*width: 80px;*/
+            &:hover,
+            &:focus {
+              text-decoration: none;
+              background-color: transparent;
+            }
+            &:after {
+            }
+          }
+          .active-trail {
+            color: @link-top-nav-active;
+          }
+        }
+        .active-trail ul {
+          .Justify-Navbar-Container;
+          width: @container-large-base;
+          top: 98px;
+          left: 0;
+          position: absolute;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          /*border: 2px solid #0f0;*/
+          ul {
+            display: none;
+          }
+          a {
+            width: auto;
+          }
+          li {
+            width: auto !important;
+            .Justify-Navbar-Item;
+            > a {
+              position: static;
+              display: block;
+              height: 100%;
+              padding-right: 0;
+              padding-top: 0;
+              padding-left: 0;
+              color: @link-top-nav-active;
+            }
+          }
+        }
+      }
+    }
+
+
+
+    /*li.active-trail li {display: block}*/
+      .active a,
+      .active-trail a {
+        color: @link-top-nav-active;
+/*        background-image: @core-sprites;
+        background-repeat: no-repeat;*/
+      }
+
+
+      a[href='/food-and-groceries'] {
+        .core-sprites-background;
+        background-position: 0 0;
+        /*transition: transform 0.6s ease-out 0s;*/
+        &:hover {
+          /*transform: rotate3d(90, 90, 0, 20deg);*/
+        }
+       /*background-image: url('../images/tab-inactive-food-and-groceries.png');*/
+      }
+      a[href='/supply-grow'] {
+        .core-sprites-background;
+        background-position: -3px -400px ;
+        /*background-image: url('../images/tab-inactive-supply-&-grow.png');*/
+      }
+      a[href='/co-opportunities'] {
+        background-position: -2px -299px ;
+        .core-sprites-background;
+        /*background-image: url('../images/tab-inactive-co-opportunities.png');*/
+      }
+      a[href='/join-co-op'] {
+        .core-sprites-background;
+        background-position: -1px -200px ;
+        /*background-image: url('../images/tab-inactive-join-now.png');*/
+      }
+      a[href='/learn-about-us'] {
+        /*background-position: -1px -100px ;*/
+        .core-sprites-background;
+        background-position: -1px -100px ;
+
+        /*background-image: url('../images/tab-inactive-learn-about-us.png');*/
+      }
+      a.active-trail {
+        &[href='/food-and-groceries'] {
+          .core-sprites-background;
+          background-position: -200px 0;
+         /*background-image: url('../images/tab-active-food-and-groceries.png');*/
+        }
+        &[href='/supply-grow'] {
+          .core-sprites-background;
+          background-position: -200px -399px ;
+          /*background-image: url('../images/tab-active-supply-&-grow.png');*/
+        }
+        &[href='/co-opportunities'] {
+          .core-sprites-background;
+          background-position: -201px -299px ;
+          /*background-image: url('../images/tab-active-co-opportunities.png');*/
+        }
+        &[href='/join-co-op'] {
+          .core-sprites-background;
+          background-position: -201px -200px ;
+          /*background-image: url('../images/tab-active-join-now.png');*/
+        }
+        &[href='/learn-about-us'] {
+          .core-sprites-background;
+          background-position: -200px -100px ;
+          /*background-image: url('../images/tab-active-learn-about-us.png');*/
+        }
+      }
+
+/*      ul {
+        li {
+          display: inline-block;
+          width: auto;
+          height: 30px;
+          margin: 0 auto;
+          padding: 0;
+        }
+        a {
+          padding: 0;
+          padding-right: 0;
+          &:after {
+            content:none;
+          }
+        }
+      }*/
+  }
+}
+
+.navbar-header {
+  .logo {
+    text-align: left;
+    float: none !important;
+    @media @tablet {
+      float: left !important;
+    }
+    margin: 0 auto;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 100%;
+
+  }
+  .region-navigation {
+    margin: 0;
+  }
+}
+.site-name-slogan {
+  span {
+    display: none;
+  }
+}

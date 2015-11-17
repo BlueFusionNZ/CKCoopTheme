@@ -1,0 +1,160 @@
+.tab-inactive-food-and-groceries, .tab-active-food-and-groceries, .tab-inactive-learn-about-us, .tab-active-learn-about-us, .tab-inactive-join-now, .tab-active-join-now, .tab-inactive-co-opportunities, .tab-active-co-opportunities, .tab-inactive-supply-&-grow, .tab-active-supply-&-grow, .twitter, .twitter-active, .facebook, .facebook-active, .rss, .rss-active, .calendar, .join-now-footer, .join-now-active, .organic-icon, .local-veges, .telephone, .open-sign, .map-icon, .mailchimp-logo, .mailchimp-logo-active{
+	background: url(sprites.png) no-repeat;
+}
+
+.tab-inactive-food-and-groceries{
+	background-position: 0 0;
+	width: 195px;
+	height: 92px;
+}
+
+.tab-active-food-and-groceries{
+	background-position: -200px 0;
+	width: 195px;
+	height: 92px;
+}
+
+.tab-inactive-learn-about-us{
+	background-position: -1px -100px ;
+	width: 195px;
+	height: 92px;
+}
+
+.tab-active-learn-about-us{
+	background-position: -200px -100px ;
+	width: 195px;
+	height: 92px;
+}
+
+.tab-inactive-join-now{
+	background-position: -1px -200px ;
+	width: 195px;
+	height: 92px;
+}
+
+.tab-active-join-now{
+	background-position: -201px -200px ;
+	width: 195px;
+	height: 92px;
+}
+
+.tab-inactive-co-opportunities{
+	background-position: -2px -299px ;
+	width: 195px;
+	height: 92px;
+}
+
+.tab-active-co-opportunities{
+	background-position: -201px -299px ;
+	width: 195px;
+	height: 92px;
+}
+
+.tab-inactive-supply-&-grow{
+	background-position: -3px -400px ;
+	width: 195px;
+	height: 92px;
+}
+
+.tab-active-supply-&-grow{
+	background-position: -200px -399px ;
+	width: 195px;
+	height: 92px;
+}
+
+.twitter{
+	background-position: 0 -500px ;
+	width: 41px;
+	height: 34px;
+}
+
+.twitter-active{
+	background-position: -50px -499px ;
+	width: 41px;
+	height: 34px;
+}
+
+.facebook{
+	background-position: -101px -500px ;
+	width: 34px;
+	height: 34px;
+}
+
+.facebook-active{
+	background-position: -150px -498px ;
+	width: 34px;
+	height: 34px;
+}
+
+.rss{
+	background-position: -199px -498px ;
+	width: 31px;
+	height: 32px;
+}
+
+.rss-active{
+	background-position: -250px -499px ;
+	width: 31px;
+	height: 32px;
+}
+
+.calendar{
+	background-position: -1px -549px ;
+	width: 68px;
+	height: 91px;
+}
+
+.join-now-footer{
+	background-position: -100px -550px ;
+	width: 87px;
+	height: 87px;
+}
+
+.join-now-active{
+	background-position: -201px -549px ;
+	width: 87px;
+	height: 87px;
+}
+
+.organic-icon{
+	background-position: -1px -650px ;
+	width: 65px;
+	height: 54px;
+}
+
+.local-veges{
+	background-position: -99px -648px ;
+	width: 132px;
+	height: 71px;
+}
+
+.telephone{
+	background-position: 0 -748px ;
+	width: 50px;
+	height: 51px;
+}
+
+.open-sign{
+	background-position: -100px -750px ;
+	width: 50px;
+	height: 48px;
+}
+
+.map-icon{
+	background-position: -201px -750px ;
+	width: 50px;
+	height: 43px;
+}
+
+.mailchimp-logo{
+	background-position: -1px -803px ;
+	width: 156px;
+	height: 38px;
+}
+
+.mailchimp-logo-active{
+	background-position: -201px -803px ;
+	width: 156px;
+	height: 38px;
+}
+
