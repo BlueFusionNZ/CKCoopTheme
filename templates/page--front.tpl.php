@@ -154,7 +154,7 @@
 
 <div class="main-container jumbotron">
   <!--<div class="row">-->
-  <img src="/sites/harbourcoop.co.nz/themes/hc_bootstrap/images/food-you-can-believe-in-small.jpg" class="front-image">
+  <img src="/sites/harbourcoop.co.nz/themes/hc_bootstrap/images/harbour-co-op-spoons-poster-vibrant.jpg" class="front-image">
   <div class="front-headline">
     <h1>Food that makes you feel good</h1>
   </div>
